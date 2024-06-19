@@ -8,7 +8,7 @@ from sklearn.metrics import mean_squared_error
 import requests
 
 # API 요청을 통해 데이터 가져오기
-url = "https://codeforces.com/api/user.rating?handle=sonhy02"
+url = "https://codeforces.com/api/user.rating?handle=EN_SA"
 response = requests.get(url)
 data = response.json()
 y = [val['newRating'] for val in data['result']]
